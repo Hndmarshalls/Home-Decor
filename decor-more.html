@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decor & More - HOME DECOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/webp" href="homedecor.webp">
+  <style>
+    /* Specific Styles for Coming Soon Page */
+    .decor-hero {
+      min-height: calc(100vh - 80px);
+      background-image: url('media/slider_3.png'); /* Reusing existing asset */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px; /* Offset for fixed header */
+    }
+
+    .decor-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .decor-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .decor-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+
+    .decor-hero-desc {
+      font-size: 1.1rem;
+      font-weight: 300;
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .decor-info-section {
+      padding: 8rem 2rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .decor-info-title {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: var(--black);
+    }
+
+    .decor-info-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 4rem;
+      font-weight: 300;
+    }
+
+    .curation-notice {
+      padding: 4rem;
+      background: #f9f9f9;
+      border-left: 4px solid var(--primary-gold);
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    .curation-notice h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+
+    .curation-notice p {
+      color: #666;
+      font-style: italic;
+    }
+    
+    /* Contact/Inquiry Section */
+    .early-inquiry-box {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 1px solid #eee;
+    }
+    
+    .early-inquiry-box h3 {
+       font-size: 1.8rem;
+       font-weight: 300;
+       color: var(--black);
+       margin-bottom: 1rem;
+    }
+    
+    .contact-preview {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #555;
+        font-size: 1.1rem;
+    }
+    
+    .contact-item i {
+        color: var(--primary-gold);
+    }
+    
+    .inquiry-btn {
+        display: inline-block;
+        background: var(--black);
+        color: var(--white);
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+    
+    .inquiry-btn:hover {
+        background: var(--primary-gold);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        .decor-hero {
+            min-height: calc(100vh - 70px);
+            margin-top: 70px;
+        }
+        .decor-hero h1 {
+            font-size: 2.5rem;
+        }
+        .curation-notice {
+            padding: 2rem;
+        }
+        .contact-preview {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          <img src="logo.webp" alt="Home Decor Logo">
+        </a>
+        
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="curtains.html" class="nav-link dropdown-trigger">Curtains <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="curtains.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Curtains</a>
+                <a href="curtains-fabric.html">Fabric Collections</a>
+                <a href="curtains-roller-blinds.html">Roller Blinds</a>
+                <a href="curtains-zebra-blinds.html">Zebra Blinds</a>
+                <a href="curtains-digital-prints.html">Digital Prints</a>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="wallpapers.html" class="nav-link dropdown-trigger">Wallpapers <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="wallpapers.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Wallpapers</a>
+                <a href="wallpapers-economy.html">Economy</a>
+                <a href="wallpapers-premium.html">Premium</a>
+                <a href="wallpapers-luxury.html">Luxury</a>
+                <a href="wallpapers-designer.html">Designer Collection</a>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="upholstery.html" class="nav-link dropdown-trigger">Upholstery <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="upholstery.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Upholstery</a>
+                <a href="upholstery-fabric.html">Fabric Collection</a>
+                <a href="upholstery-leatheratte.html">Leatheratte</a>
+              </div>
+            </li>
+            <li><a href="decor-more.html" class="nav-link active">Decor & More</a></li>
+            <li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://wa.me/919400301100" class="chat-btn">
+            <i class="fab fa-whatsapp"></i> <span>Chat With Us</span>
+          </a>
+          <button class="menu-btn" id="mobileToggle" aria-label="Toggle Menu">
+            <span class="hamburger-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <main>
+    <section class="decor-hero">
+      <div class="decor-hero-content scroll-reveal">
+        <h1>Decor & More</h1>
+        <p style="font-size: 1.2rem; letter-spacing: 1px; text-transform: uppercase;">The Final Touches of Perfection</p>
+        <p class="decor-hero-desc">
+          Beyond the essential structures of design lies the art of curation—the subtle textures, the ambient lighting, and the bespoke artifacts that truly define a space. Our 'Decor & More' collection is a tribute to these finishing touches, bringing you an exclusive range of hand-picked accessories that blend modern aesthetics with timeless craftsmanship.
+        </p>
+      </div>
+    </section>
+
+    <section class="decor-info-section">
+      <div class="scroll-reveal" data-delay="100">
+        <h2 class="decor-info-title">Curating the Exceptional</h2>
+        <p class="decor-info-text">
+          True luxury lies in the details. Our "Decor & More" selection is dedicated to those finishing touches that transform a house into a home. From bespoke rugs that ground your living space to artisanal lighting artifacts that cast the perfect ambient glow, we believe that accessories are not just additions—they are the soul of the interior. We are looking at a diverse range including hand-knotted carpets, ceramic art pieces, and architectural hardwares.
+        </p>
+        
+        <div class="curation-notice scroll-reveal" data-delay="300">
+          <h3>In The Works</h3>
+          <p>We are currently in the process of hand-selecting our debut collection for this category. Our design team is collaborating with craftsmen globally to bring you a range that meets the high standards you've come to expect from Home Decor. We invite you to check back shortly as we unveil these exclusive pieces.</p>
+        </div>
+
+        <div class="early-inquiry-box scroll-reveal" data-delay="400">
+            <h3>Can't Wait?</h3>
+            <p>For immediate inquiries or detailed information about our upcoming collection, feel free to reach out to us directly.</p>
+            
+            <div class="contact-preview">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i> <span>+91 94003 01100</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> <span>hello@homedecor.com</span>
+                </div>
+            </div>
+
+            <a href="index.html#contact-section" class="inquiry-btn">Get in Touch Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="scroll-reveal">
+          <h4>About</h4>
+          <p>HOME&DECOR offers premium furnishing and décor solutions including wallpapers, curtains, blinds, upholstery, panels, flooring, rugs, and accessories. We specialize in customized designs, quality materials, and professional installation to create stylish and functional spaces for homes and businesses.</p>
+        </div>
+        <div class="scroll-reveal" data-delay="100">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="curtains.html">Curtains</a></li>
+            <li><a href="wallpapers.html">Wallpapers</a></li>
+            <li><a href="upholstery.html">Upholstery</a></li>
+          </ul>
+        </div>
+        <div class="scroll-reveal" data-delay="200">
+          <h4>Contact</h4>
+          <p>+91 94003 01100<br>hello@homedecor.com<br>New Delhi, India</p>
+        </div>
+        <div class="scroll-reveal" data-delay="300">
+           <h4>Follow Us</h4> 
+           <ul class="social-icons"> 
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li> 
+          </ul> 
+        </div>
+      </div>
+
+      <div class="footer-bottom scroll-reveal" data-delay="400">
+        <p>© 2024 HOME DECOR. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

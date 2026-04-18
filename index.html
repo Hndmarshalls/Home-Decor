@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME DECOR - Premium Interior Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/webp" href="homedecor.webp">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="logo.webp" alt="Home Decor Logo">
+        </a>
+        
+        <!-- Navigation Menu -->
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="curtains.html" class="nav-link dropdown-trigger">
+                Curtains <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="curtains.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Curtains</a>
+                <a href="curtains-fabric.html">Fabric Collections</a>
+                <a href="curtains-roller-blinds.html">Roller Blinds</a>
+                <a href="curtains-zebra-blinds.html">Zebra Blinds</a>
+                <a href="curtains-digital-prints.html">Digital Prints</a>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="wallpapers.html" class="nav-link dropdown-trigger">
+                Wallpapers <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="wallpapers.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Wallpapers</a>
+                <a href="wallpapers-economy.html">Economy</a>
+                <a href="wallpapers-premium.html">Premium</a>
+                <a href="wallpapers-luxury.html">Luxury</a>
+                <a href="wallpapers-designer.html">Designer Collection</a>
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="upholstery.html" class="nav-link dropdown-trigger">
+                Upholstery <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="upholstery.html" class="dropdown-overview"><i class="fas fa-arrow-right"></i> View All Upholstery</a>
+                <a href="upholstery-fabric.html">Fabric Collection</a>
+                <a href="upholstery-leatheratte.html">Leatheratte</a>
+              </div>
+            </li>
+            <li><a href="decor-more.html" class="nav-link">Decor & More</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side Actions -->
+        <div class="nav-actions">
+          <a href="https://wa.me/919400301100" class="chat-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat With Us</span>
+          </a>
+          <button class="menu-btn" id="mobileToggle" aria-label="Toggle Menu">
+            <span class="hamburger-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Overlay for mobile menu -->
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- HOME PAGE CONTENT -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-slider">
+        <!-- Slide 1: Curtains (formerly Slide 2 content) -->
+        <div class="hero-slide active">
+          <img src="media/slider_1.webp" class="hero-slide-img" alt="Luxury Curtains">
+          <div class="slide-content-wrapper"> <!-- Left Aligned -->
+             <div class="slide-content">
+               <div class="hero-label fade-in-up" style="animation-delay: 0.1s;">
+                 <span>Instant Elegance</span>
+               </div>
+               <h1 class="fade-in-up" style="animation-delay: 0.3s;">High-End Look, <span class="gold-text">Zero Mess</span></h1>
+               <p class="fade-in-up" style="animation-delay: 0.5s;">Achieve a high-end look without the high-effort cleanup; it’s the ultimate no-mess upgrade.</p>
+               
+               <div class="hero-features fade-in-up" style="animation-delay: 0.7s;">
+                  <div class="feature-badge">
+                    <i class="fas fa-award"></i> <span>10+ years of craftsmanship</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-gem"></i> <span>Premium fabric quality</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-leaf"></i> <span>Sustainable & eco-friendly</span>
+                  </div>
+               </div>
+
+               <div class="hero-buttons fade-in-up" style="animation-delay: 0.9s;">
+                 <a href="curtains.html" class="btn btn-primary">Explore Curtains</a>
+               </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Wallpapers (formerly Slide 1 content) -->
+        <div class="hero-slide">
+          <img src="media/slider_2.webp" class="hero-slide-img" alt="Designer Wallpapers" loading="lazy">
+          <div class="slide-content-wrapper pl-style"> <!-- Right Aligned -->
+             <div class="slide-content">
+               <div class="hero-label fade-in-up" style="animation-delay: 0.1s;">
+                 <span>Redefine Your Walls</span>
+               </div>
+               <h1 class="fade-in-up" style="animation-delay: 0.3s;">Why Wait for <span class="gold-text">Paint to Dry?</span></h1>
+               <p class="fade-in-up" style="animation-delay: 0.5s;">Upgrade your space in the time it takes to drink a coffee. With our designer wall-coverings.</p>
+               
+               <div class="hero-features fade-in-up" style="animation-delay: 0.7s;">
+                  <div class="feature-badge">
+                    <i class="fas fa-award"></i> <span>10+ years of craftsmanship</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-gem"></i> <span>Premium fabric quality</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-leaf"></i> <span>Sustainable & eco-friendly</span>
+                  </div>
+               </div>
+
+               <div class="hero-buttons fade-in-up" style="animation-delay: 0.9s;">
+                 <a href="wallpapers.html" class="btn btn-secondary">Discover More</a>
+               </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: All Collections -->
+        <div class="hero-slide">
+          <img src="media/slider_3.webp" class="hero-slide-img" alt="Home Decor Complete Collection" loading="lazy">
+          <div class="slide-content-wrapper center-style"> <!-- Center Aligned -->
+             <div class="slide-content">
+               <div class="hero-label fade-in-up" style="animation-delay: 0.1s;">
+                 <span>Complete Evolution</span>
+               </div>
+               <h1 class="fade-in-up" style="animation-delay: 0.3s;">The Ultimate <span class="gold-text">Triple Threat</span></h1>
+               <p class="fade-in-up" style="animation-delay: 0.5s;">Wallpaper, curtains, and upholstery that blend perfectly for an instant room evolution.</p>
+               
+               <div class="hero-features fade-in-up" style="animation-delay: 0.7s;">
+                  <div class="feature-badge">
+                    <i class="fas fa-award"></i> <span>10+ years of craftsmanship</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-gem"></i> <span>Premium fabric quality</span>
+                  </div>
+                  <div class="feature-badge">
+                    <i class="fas fa-leaf"></i> <span>Sustainable & eco-friendly</span>
+                  </div>
+               </div>
+
+                <div class="hero-buttons fade-in-up" style="animation-delay: 0.9s;">
+                 <a href="#feature" class="btn btn-primary">Our Collections</a>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Navigation Dots -->
+      <div class="slider-dots">
+        <div class="dot active" data-slide="0"></div>
+        <div class="dot" data-slide="1"></div>
+        <div class="dot" data-slide="2"></div>
+      </div>
+    </section>
+
+    <!-- MAIN PARTNERS SECTION -->
+    <section class="brands main-partners-section">
+      <div class="brands-header scroll-reveal">
+        <div class="brands-label">
+          <span>Premium Alliance</span>
+        </div>
+        <h2 class="brands-title">In Association With</h2>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- First Set -->
+          <a href="#" class="brand-item-img"><img src="cropped_Brand1.jpeg" alt="Partner 1"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand2.jpeg" alt="Partner 2"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand3.jpeg" alt="Partner 3"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand4.jpeg" alt="Partner 4"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand1.jpeg" alt="Partner 1"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand2.jpeg" alt="Partner 2"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand3.jpeg" alt="Partner 3"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand4.jpeg" alt="Partner 4"></a>
+          <!-- Duplicate for Seamless Scroll -->
+          <a href="#" class="brand-item-img"><img src="cropped_Brand1.jpeg" alt="Partner 1"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand2.jpeg" alt="Partner 2"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand3.jpeg" alt="Partner 3"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand4.jpeg" alt="Partner 4"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand1.jpeg" alt="Partner 1"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand2.jpeg" alt="Partner 2"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand3.jpeg" alt="Partner 3"></a>
+          <a href="#" class="brand-item-img"><img src="cropped_Brand4.jpeg" alt="Partner 4"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED COLLECTIONS -->
+    <section id="feature" class="featured">
+      <div class="section-header scroll-reveal">
+        <div class="section-label">
+          <span>Our Collections</span>
+        </div>
+        <h2 class="section-title">Featured Collections</h2>
+      </div>
+
+      <div class="featured-split-container">
+        
+        <!-- Row 1: Wallpapers -->
+        <div class="feature-split-row scroll-reveal" data-delay="0">
+           <div class="feature-img-wrapper">
+              <img src="media/Wallpaper/wallpaper _ECONOMY_2.webp" alt="Wallpapers" loading="lazy" decoding="async">
+           </div>
+           <div class="feature-content">
+              <h3 class="feature-category-name">Wallpapers</h3>
+              <p class="feature-desc">Add depth and character to your walls with our extensive range of textured, patterned, and 3D wallpapers designed for modern living.</p>
+              <a href="wallpapers.html" class="feature-cta-btn">Explore Collection <i class="fas fa-arrow-right"></i></a>
+           </div>
+        </div>
+
+        <!-- Row 2: Curtains -->
+        <div class="feature-split-row scroll-reveal" data-delay="100">
+           <div class="feature-img-wrapper">
+              <img src="media/Curtain/fabric_1.webp" alt="Curtains" loading="lazy" decoding="async">
+           </div>
+           <div class="feature-content">
+              <h3 class="feature-category-name">Curtains</h3>
+              <p class="feature-desc">Transform your space with our premium collection of sheer, blackout, and digitally printed curtains that blend privacy with style.</p>
+              <a href="curtains.html" class="feature-cta-btn">Explore Collection <i class="fas fa-arrow-right"></i></a>
+           </div>
+        </div>
+
+        <!-- Row 3: Upholstery -->
+        <div class="feature-split-row scroll-reveal" data-delay="200">
+           <div class="feature-img-wrapper">
+              <img src="media/upholstery/fabric_2.webp" alt="Upholstery" loading="lazy" decoding="async">
+           </div>
+           <div class="feature-content">
+              <h3 class="feature-category-name">Upholstery</h3>
+              <p class="feature-desc">Revitalize your furniture with our durable and luxurious upholstery fabrics, available in a variety of textures and finishes.</p>
+              <a href="upholstery.html" class="feature-cta-btn">Explore Collection <i class="fas fa-arrow-right"></i></a>
+           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-container">
+        <div class="scroll-reveal">
+          <div class="about-label scroll-reveal" data-delay="100">
+            <span>About Us</span>
+          </div>
+          <h2 class="scroll-reveal" data-delay="200">Luxury Redefined</h2>
+          <div class="about-text scroll-reveal" data-delay="300" id="aboutText">
+            <p>HOME&DECOR is a trusted home décor and furnishing company with over 10 years of experience in delivering premium interior solutions for residential and commercial spaces. We specialize in wallpapers, curtains, blinds, upholstery, wall panels, flooring, rugs, and home décor accessories, offering a perfect balance of style, comfort, and durability.</p>
+            
+            
+            <div id="moreAbout" class="more-content">
+              <p>With more than a decade of expertise in the interior furnishing and décor industry, HOME&DECOR has successfully served homeowners, architects, interior designers, hotels, offices, and retail spaces. Our deep understanding of materials, design trends, and installation techniques allows us to deliver interiors that are both elegant and long-lasting.</p>
+              
+              <p>We provide customized furnishing solutions, including made-to-measure curtains, digital printed wallpapers, bespoke upholstery, decorative wall panels, and advanced flooring systems. From initial consultation and product selection to professional installation, our experienced team ensures a seamless and hassle-free experience.</p>
+              
+              <p>At HOME&DECOR, we source our products from reputed brands and manufacturers, ensuring high quality, superior finish, and reliable performance. Whether it’s a single feature wall, a complete home makeover, or a large commercial project, we bring expertise, creativity, and precision to every space.</p>
+              
+              <p>With 10+ years of industry experience, a customer-first approach, and a passion for design excellence, HOME&DECOR continues to be a preferred destination for complete interior décor solutions under one roof.</p>
+            </div>
+            
+            <button id="seeMoreBtn" class="see-more-btn">See More</button>
+          </div>
+        </div>
+        <div class="about-image-wrapper scroll-reveal" data-delay="500">
+          <img src="media/about_1.webp" alt="About" loading="lazy">
+          <div id="moreAboutImage" class="more-content secondary-about-image">
+            <img src="media/about_2.webp" alt="About More" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-item scroll-reveal" data-delay="100">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item scroll-reveal" data-delay="200">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item scroll-reveal" data-delay="300">
+          <div class="stat-number" data-target="1000">0</div>
+          <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-item scroll-reveal" data-delay="400">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Brands</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients">
+      <div class="clients-header scroll-reveal">
+        <div class="clients-label">
+          <span>Trusted By</span>
+        </div>
+        <h2 class="clients-title">Our Valued Clients</h2>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- First Set -->
+          <div class="client-item"><p>Taj Hotels</p></div>
+          <div class="client-item"><p>ITC Luxury</p></div>
+          <div class="client-item"><p>Oberoi Group</p></div>
+          <div class="client-item"><p>Marriott</p></div>
+          <div class="client-item"><p>Hyatt Centric</p></div>
+          <div class="client-item"><p>Le Meridien</p></div>
+          <div class="client-item"><p>Radisson</p></div>
+          <div class="client-item"><p>JW Marriott</p></div>
+          <!-- Duplicate for Seamless Scroll -->
+          <div class="client-item"><p>Taj Hotels</p></div>
+          <div class="client-item"><p>ITC Luxury</p></div>
+          <div class="client-item"><p>Oberoi Group</p></div>
+          <div class="client-item"><p>Marriott</p></div>
+          <div class="client-item"><p>Hyatt Centric</p></div>
+          <div class="client-item"><p>Le Meridien</p></div>
+          <div class="client-item"><p>Radisson</p></div>
+          <div class="client-item"><p>JW Marriott</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brands">
+      <div class="brands-header scroll-reveal">
+        <div class="brands-label">
+          <span>Partners</span>
+        </div>
+        <h2 class="brands-title">Brands We Collaborate With</h2>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- First Set -->
+          <div class="brand-item"><p>Grandeco</p></div>
+          <div class="brand-item"><p>Marshalls Design Studio</p></div>
+          <div class="brand-item"><p>SIRPI</p></div>
+          <div class="brand-item"><p>Fedora</p></div>
+          <div class="brand-item"><p>OMEXCO</p></div>
+          <div class="brand-item"><p>rasch</p></div>
+          <div class="brand-item"><p>Eliteliving</p></div>
+          <div class="brand-item"><p>GAENARI</p></div>
+          <div class="brand-item"><p>marshalls</p></div>
+          <div class="brand-item"><p>EMILIANA</p></div>
+          <!-- Duplicate for Seamless Scroll -->
+          <div class="brand-item"><p>Grandeco</p></div>
+          <div class="brand-item"><p>Marshalls Design Studio</p></div>
+          <div class="brand-item"><p>SIRPI</p></div>
+          <div class="brand-item"><p>Fedora</p></div>
+          <div class="brand-item"><p>OMEXCO</p></div>
+          <div class="brand-item"><p>rasch</p></div>
+          <div class="brand-item"><p>Eliteliving</p></div>
+          <div class="brand-item"><p>GAENARI</p></div>
+          <div class="brand-item"><p>marshalls</p></div>
+          <div class="brand-item"><p>EMILIANA</p></div>
+        </div>
+      </div>
+    </section>
+
+<!-- CONTACT SECTION - Luxury Map Hub -->
+<!-- CONTACT SECTION V3 - Classy Dark -->
+<section id="contact-section" class="contact-v3" style="background-image: url('media/final_4_ (1).webp');">
+  <div class="contact-v3-overlay"></div>
+  <div class="contact-v3-container">
+    <div class="contact-v3-content scroll-reveal">
+      <div class="section-label is-light">
+        <span>Reach Out</span>
+      </div>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-v3-desc">Experience the pinnacle of luxury home decor. Visit our flagship showroom or contact our specialized consultants for a personalized experience.</p>
+      
+      <div class="contact-v3-grid">
+        <a href="https://www.google.com/maps/search/?api=1&query=123+Luxury+Avenue,+Design+District,+New+Delhi" target="_blank" class="v3-card">
+           <div class="v3-icon"><i class="fas fa-map-marker-alt"></i></div>
+           <h4>Visit Us</h4>
+           <div class="v3-line"></div>
+           <p>Aysha Rd, Anjumuri, Kuthappady,<br> Vyttila, Ernakulam, Kochi,<br> Kerala 682019</p>
+        </a>
+        <a href="tel:+919400301100" class="v3-card">
+           <div class="v3-icon"><i class="fas fa-phone"></i></div>
+           <h4>Call Us</h4>
+           <div class="v3-line"></div>
+           <p>+91 94003 01100</p>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@homedecor.com" target="_blank" class="v3-card">
+           <div class="v3-icon"><i class="fas fa-envelope"></i></div>
+           <h4>Email Us</h4>
+           <div class="v3-line"></div>
+           <p>hello@homedecor.com</p>
+        </a>
+      </div>
+      
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31435.474289442638!2d76.27799034118652!3d9.980938863268337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080de25065fc0d%3A0x5246d255291ed6!2sHome%20%26%20Decor!5e0!3m2!1sen!2sin!4v1769771588051!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <div class="contact-v3-actions">
+        <a href="https://wa.me/919400301100" target="_blank" class="v3-btn">
+          <i class="fab fa-whatsapp"></i> Book Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="scroll-reveal">
+          <h4>About</h4>
+          <p>HOME&DECOR offers premium furnishing and décor solutions including wallpapers, curtains, blinds, upholstery, panels, flooring, rugs, and accessories. We specialize in customized designs, quality materials, and professional installation to create stylish and functional spaces for homes and businesses.</p>
+        </div>
+        <div class="scroll-reveal" data-delay="100">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="curtains.html">Curtains</a></li>
+            <li><a href="wallpapers.html">Wallpapers</a></li>
+            <li><a href="upholstery.html">Upholstery</a></li>
+          </ul>
+        </div>
+        <div class="scroll-reveal" data-delay="200">
+          <h4>Contact</h4>
+          <p>+91 94003 01100<br>hello@homedecor.com<br>New Delhi, India</p>
+        </div>
+        <div class="scroll-reveal" data-delay="300">
+           <h4>Follow Us</h4> 
+           <ul class="social-icons"> 
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li> 
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li> 
+          </ul> 
+        </div>
+      </div>
+
+      <div class="footer-bottom scroll-reveal" data-delay="400">
+        <p>© 2024 HOME DECOR. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
